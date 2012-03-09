@@ -3,6 +3,7 @@ set background=dark
 set modeline
 "set mouse=a
 set title
+set autointent
 
 if has("gui_running")
 	colorscheme slate
