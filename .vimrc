@@ -4,9 +4,17 @@ set modeline
 "set mouse=a
 set title
 set ai
+set laststatus=2
+let g:Powerline_symbols = 'unicode'
+let g:Powerline_theme = 'default'
+let g:Powerline_colorscheme = 'solarized'
+
+
+colorscheme desert
 
 if has("gui_running")
-	colorscheme slate
+	set guifont=Terminus
+	"let g:Powerline_symbols = 'fancy'
 endif
 
 call pathogen#infect()
