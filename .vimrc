@@ -9,6 +9,9 @@ if has("gui_running")
 	colorscheme slate
 endif
 
+call pathogen#infect()
+
+
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
 "  "100 :  will save up to 100 lines for each register
