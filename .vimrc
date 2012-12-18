@@ -8,10 +8,8 @@ set laststatus=2
 set tabpagemax=25
 let g:Powerline_symbols = 'unicode'
 let g:Powerline_theme = 'default'
-let g:Powerline_colorscheme = 'solarized'
-
-
-colorscheme desert
+"let g:Powerline_colorscheme = 'solarized'
+let g:Powerline_colorscheme = 'zenburn'
 
 if has("gui_running")
 	set guifont=Terminus
@@ -19,6 +17,10 @@ if has("gui_running")
 endif
 
 call pathogen#infect()
+
+"colorscheme desert
+"colorscheme solarized
+colorscheme zenburn
 
 
 " Tell vim to remember certain things when we exit
