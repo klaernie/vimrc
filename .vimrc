@@ -22,6 +22,9 @@ call pathogen#infect()
 "colorscheme solarized
 colorscheme zenburn
 
+autocmd FileType mail set omnifunc=muttaliasescomplete#Complete 
+source $HOME/.vim/muttaliasescomplete.vim
+
 
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
