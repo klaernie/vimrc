@@ -4,10 +4,27 @@ set modeline
 "set mouse=a
 set title
 set ai
+set laststatus=2
+set tabpagemax=25
+let g:Powerline_symbols = 'unicode'
+let g:Powerline_theme = 'default'
+"let g:Powerline_colorscheme = 'solarized'
+let g:Powerline_colorscheme = 'zenburn'
 
 if has("gui_running")
-	colorscheme slate
+	set guifont=Terminus
+	"let g:Powerline_symbols = 'fancy'
 endif
+
+call pathogen#infect()
+
+"colorscheme desert
+"colorscheme solarized
+colorscheme zenburn
+
+autocmd FileType mail set omnifunc=muttaliasescomplete#Complete 
+source $HOME/.vim/muttaliasescomplete.vim
+
 
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
