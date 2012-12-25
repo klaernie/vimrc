@@ -5,6 +5,7 @@ set modeline
 set title
 set ai
 set laststatus=2
+set tabpagemax=25
 let g:Powerline_symbols = 'unicode'
 let g:Powerline_theme = 'default'
 let g:Powerline_colorscheme = 'default'
@@ -20,6 +21,9 @@ call pathogen#infect()
 "colorscheme desert
 "colorscheme solarized
 colorscheme zenburn
+
+autocmd FileType mail set omnifunc=muttaliasescomplete#Complete 
+source $HOME/.vim/muttaliasescomplete.vim
 
 
 " Tell vim to remember certain things when we exit
