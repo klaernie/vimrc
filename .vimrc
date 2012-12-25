@@ -7,8 +7,8 @@ set ai
 set laststatus=2
 let g:Powerline_symbols = 'unicode'
 let g:Powerline_theme = 'default'
-"let g:Powerline_colorscheme = 'solarized'
-let g:Powerline_colorscheme = 'zenburn'
+let g:Powerline_colorscheme = 'default'
+set t_Co=256
 
 if has("gui_running")
 	set guifont=Terminus
