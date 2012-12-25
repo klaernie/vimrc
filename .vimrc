@@ -23,7 +23,7 @@ call pathogen#infect()
 colorscheme zenburn
 
 autocmd FileType mail set omnifunc=muttaliasescomplete#Complete 
-source $HOME/.vim/muttaliasescomplete.vim
+source /home/kandre/.vim/muttaliasescomplete.vim
 
 
 " Tell vim to remember certain things when we exit

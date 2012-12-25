@@ -3,7 +3,7 @@
 " modified by: Valentin H <valentin.haenel at gmx.de>
 
 let g:aliases = []
-let g:aliases_files = [ '~/.mutt/aliases', '~/.mutt/lists' ]
+let g:aliases_files = [ '~/.mutt/muttrc.aliases', '~/.mutt/lists' ]
 
 function! muttaliasescomplete#Init()
 	for a:file in g:aliases_files
