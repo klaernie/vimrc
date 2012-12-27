@@ -6,7 +6,7 @@ set title
 set ai
 set laststatus=2
 set tabpagemax=25
-let g:Powerline_symbols = 'unicode'
+let g:Powerline_symbols = 'fancy'
 let g:Powerline_theme = 'default'
 let g:Powerline_colorscheme = 'default'
 set t_Co=256
