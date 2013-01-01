@@ -10,6 +10,7 @@ let g:Powerline_symbols = 'fancy'
 let g:Powerline_theme = 'default'
 let g:Powerline_colorscheme = 'default'
 set t_Co=256
+set smartindent
 
 if has("gui_running")
 	set guifont=Terminus
