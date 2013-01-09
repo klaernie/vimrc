@@ -19,6 +19,9 @@ endif
 
 call pathogen#infect()
 
+" make powerline show a trailing whitespace marker
+call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+
 "colorscheme desert
 "colorscheme solarized
 colorscheme zenburn
