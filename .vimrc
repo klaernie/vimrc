@@ -27,8 +27,10 @@ call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 "colorscheme solarized
 colorscheme zenburn
 
-autocmd FileType mail set omnifunc=muttaliasescomplete#Complete 
-source /home/kandre/.vim/muttaliasescomplete.vim
+if filereadable("/home/kandre/.vim/muttaliasescomplete.vim")
+	autocmd FileType mail set omnifunc=muttaliasescomplete#Complete
+	source /home/kandre/.vim/muttaliasescomplete.vim
+endif
 
 
 " Tell vim to remember certain things when we exit
