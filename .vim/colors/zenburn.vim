@@ -441,8 +441,8 @@ else
         hi VisualNOS     guibg=#2f2f2f
 
         if &t_Co > 255
-            hi Visual    ctermbg=235
-            hi VisualNOS ctermbg=235
+            hi Visual    ctermfg=0   ctermbg=208
+            hi VisualNOS ctermbg=208
         endif
     endif
 endif
