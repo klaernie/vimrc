@@ -13,6 +13,11 @@ set t_Co=256
 set smartindent
 set hlsearch
 
+noremap <esc><left> :tabprev<enter>
+noremap <esc><right> :tabnext<enter>
+inoremap <esc><left> <esc>:tabprev<enter>
+inoremap <esc><right> <esc>:tabnext<enter>
+
 if has("gui_running")
 	set guifont=Terminus
 	"let g:Powerline_symbols = 'fancy'
