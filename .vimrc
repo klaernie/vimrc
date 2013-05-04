@@ -21,6 +21,17 @@ noremap <esc><right> :tabnext<enter>
 inoremap <esc><left> <esc>:tabprev<enter>
 inoremap <esc><right> <esc>:tabnext<enter>
 
+nnoremap <esc><F1> 1gt
+nnoremap <esc><F2> 2gt
+nnoremap <esc><F3> 3gt
+nnoremap <esc><F4> 4gt
+nnoremap <esc><F5> 5gt
+nnoremap <esc><F6> 6gt
+nnoremap <esc><F7> 7gt
+nnoremap <esc><F8> 8gt
+nnoremap <esc><F9> 9gt
+nnoremap <esc><F0> 10gt
+
 if has("gui_running")
 	set guifont=Terminus
 	"let g:Powerline_symbols = 'fancy'
