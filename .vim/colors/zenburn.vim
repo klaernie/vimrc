@@ -257,6 +257,7 @@ if &t_Co > 255
     hi Comment         ctermfg=108
     hi Conditional     ctermfg=223   cterm=bold
     hi Constant        ctermfg=181   cterm=bold
+    hi Conceal         ctermfg=15    ctermbg=none
     hi Cursor          ctermfg=233   cterm=bold
     hi Debug           ctermfg=181   cterm=bold
     hi Define          ctermfg=223   cterm=bold

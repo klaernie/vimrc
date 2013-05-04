@@ -13,6 +13,9 @@ set t_Co=256
 set smartindent
 set hlsearch
 
+syn match WhiteSpace / / conceal cchar=‧
+setl conceallevel=2 concealcursor=nv
+
 noremap <esc><left> :tabprev<enter>
 noremap <esc><right> :tabnext<enter>
 inoremap <esc><left> <esc>:tabprev<enter>
