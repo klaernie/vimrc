@@ -5,6 +5,8 @@
 let g:aliases = []
 let g:aliases_files = [ '~/.mutt/muttrc.aliases', '~/.mutt/lists' ]
 
+autocmd FileType mail set omnifunc=muttaliasescomplete#Complete
+
 function! muttaliasescomplete#Init()
 	for a:file in g:aliases_files
 		call muttaliasescomplete#LoadFile(a:file)

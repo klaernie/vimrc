@@ -16,14 +16,17 @@ set hlsearch
 syn match WhiteSpace / / conceal cchar=‧
 setl conceallevel=2 concealcursor=nv
 
-source /home/kandre/.vim/keymappings.vimrc
-
 if has("gui_running")
 	set guifont=Terminus
 	"let g:Powerline_symbols = 'fancy'
 endif
 
+" source all plugins from .vim/bundle
 call pathogen#infect()
+
+" source my aux vimscripts
+runtime keymappings.vimrc
+runtime muttaliasescomplete.vim
 
 " make powerline show a trailing whitespace marker
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
@@ -31,12 +34,6 @@ call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 "colorscheme desert
 "colorscheme solarized
 colorscheme zenburn
-
-if filereadable("/home/kandre/.vim/muttaliasescomplete.vim")
-	autocmd FileType mail set omnifunc=muttaliasescomplete#Complete
-	source /home/kandre/.vim/muttaliasescomplete.vim
-endif
-
 
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
