@@ -15,6 +15,7 @@ set t_Co=256
 set autoindent
 set smartindent
 set hlsearch
+nohlsearch
 
 syn match WhiteSpace / / conceal cchar=‧
 setl conceallevel=2 concealcursor=nv
