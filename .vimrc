@@ -26,6 +26,7 @@ endif
 
 " source all plugins from .vim/bundle
 call pathogen#infect()
+call pathogen#helptags()
 
 " source my aux vimscripts
 runtime keymappings.vimrc
