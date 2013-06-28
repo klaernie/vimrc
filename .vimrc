@@ -3,13 +3,16 @@ set background=dark
 set modeline
 "set mouse=a
 set title
-set ai
-set laststatus=2
 set tabpagemax=25
+
+" powerline-related
+set laststatus=2
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_theme = 'default'
 let g:Powerline_colorscheme = 'default'
 set t_Co=256
+
+set autoindent
 set smartindent
 set hlsearch
 
