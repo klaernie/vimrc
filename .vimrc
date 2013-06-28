@@ -17,8 +17,11 @@ set smartindent
 set hlsearch
 nohlsearch
 
-syn match WhiteSpace / / conceal cchar=‧
-setl conceallevel=2 concealcursor=nv
+" make :set list more useful
+set list listchars:tab:▸\ ,eol:¬,trail:▇
+
+"syn match WhiteSpace / / conceal cchar=‧
+"setl conceallevel=2 concealcursor=nv
 
 if has("gui_running")
 	set guifont=Terminus
