@@ -36,8 +36,11 @@ call pathogen#helptags()
 runtime keymappings.vimrc
 runtime muttaliasescomplete.vim
 
-" make powerline show a trailing whitespace marker
-call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+" only if powerline is loaded
+if exists('g:Powerline_loaded')
+	" make powerline show a trailing whitespace marker
+	call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+endif
 
 "colorscheme desert
 "colorscheme solarized
