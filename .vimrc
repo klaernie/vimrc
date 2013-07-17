@@ -10,7 +10,7 @@ set laststatus=2
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_theme = 'default'
 let g:Powerline_colorscheme = 'default'
-set t_Co=256
+"set t_Co=256
 
 set autoindent
 set smartindent
