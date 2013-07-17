@@ -36,6 +36,9 @@ call pathogen#helptags()
 runtime keymappings.vimrc
 runtime muttaliasescomplete.vim
 
+" include man-ftplugin to get :Man
+runtime ftplugin/man.vim
+
 " only if powerline is loaded
 if exists('g:Powerline_loaded')
 	" make powerline show a trailing whitespace marker
