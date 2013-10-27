@@ -12,6 +12,7 @@ let g:Powerline_theme = 'default'
 let g:Powerline_colorscheme = 'default'
 "set t_Co=256
 
+filetype plugin indent on
 set autoindent
 set smartindent
 set hlsearch
