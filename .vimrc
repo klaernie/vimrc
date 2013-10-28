@@ -3,7 +3,7 @@ set background=dark
 set modeline
 "set mouse=a
 set title
-set tabpagemax=25
+set tabpagemax=100
 
 " powerline-related
 set laststatus=2
