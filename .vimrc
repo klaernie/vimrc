@@ -46,6 +46,10 @@ if exists('g:Powerline_loaded')
 	call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 endif
 
+command! -nargs=1 -complete=help H :tab help <args> |
+			\let helpfile = expand("%") |
+			\execute "tab view ".helpfile
+
 "colorscheme desert
 "colorscheme solarized
 colorscheme zenburn
