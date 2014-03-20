@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.mako            setfiletype mako
+au BufRead,BufNewFile *.mako            set filetype=mako

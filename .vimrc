@@ -3,7 +3,7 @@ set background=dark
 set modeline
 "set mouse=a
 set title
-set tabpagemax=25
+set tabpagemax=100
 
 " powerline-related
 set laststatus=2
@@ -12,6 +12,7 @@ let g:Powerline_theme = 'default'
 let g:Powerline_colorscheme = 'default'
 "set t_Co=256
 
+filetype plugin indent on
 set autoindent
 set smartindent
 set hlsearch
@@ -44,6 +45,10 @@ if exists('g:Powerline_loaded')
 	" make powerline show a trailing whitespace marker
 	call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 endif
+
+command! -nargs=1 -complete=help H :tab help <args> |
+			\let helpfile = expand("%") |
+			\execute "tab view ".helpfile
 
 "colorscheme desert
 "colorscheme solarized
