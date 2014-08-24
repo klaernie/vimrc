@@ -1,1 +1,0 @@
-AnsiEsx.vba: call delete('/media/Jen/kandre/.vim/bundle/AnsiEsc/plugin/AnsiEscPlugin.vim')|call delete('/media/Jen/kandre/.vim/bundle/AnsiEsc/autoload/AnsiEsc.vim')|call delete('/media/Jen/kandre/.vim/bundle/AnsiEsc/plugin/cecutil.vim')|call delete('/media/Jen/kandre/.vim/bundle/AnsiEsc/doc/AnsiEsc.txt')
