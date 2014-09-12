@@ -3,7 +3,9 @@ set background=dark
 set modeline
 "set mouse=a
 set title
-set tabpagemax=100
+if exists("&tabpagemax")
+    set tabpagemax=100
+endif
 
 " powerline-related
 set laststatus=2
@@ -29,13 +31,17 @@ if has("gui_running")
 	"let g:Powerline_symbols = 'fancy'
 endif
 
-" source all plugins from .vim/bundle
-call pathogen#infect()
-call pathogen#helptags()
+if v:version >= 700
+	" source all plugins from .vim/bundle
+	silent! call pathogen#infect()
+	silent! call pathogen#helptags()
+endif
 
 " source my aux vimscripts
 runtime keymappings.vimrc
-runtime muttaliasescomplete.vim
+if v:version >= 700
+	runtime muttaliasescomplete.vim
+endif
 
 " include man-ftplugin to get :Man
 runtime ftplugin/man.vim
@@ -43,16 +49,19 @@ runtime ftplugin/man.vim
 " only if powerline is loaded
 if exists('g:Powerline_loaded')
 	" make powerline show a trailing whitespace marker
-	call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+	silent! call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 endif
 
 command! -nargs=1 -complete=help H :tab help <args> |
 			\let helpfile = expand("%") |
 			\execute "tab view ".helpfile
 
-"colorscheme desert
-"colorscheme solarized
-colorscheme zenburn
+if v:version >= 700
+	colorscheme zenburn
+else
+	colorscheme desert
+endif
+
 
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
