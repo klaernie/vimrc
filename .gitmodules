@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/csv"]
 	path = .vim/bundle/csv
 	url = https://github.com/chrisbra/csv.vim.git
+[submodule ".vim/bundle/NrrwRgn"]
+	path = .vim/bundle/NrrwRgn
+	url = https://github.com/chrisbra/NrrwRgn.git
