@@ -15,6 +15,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_min_count = 2
 let g:airline#extensions#tabline#tab_min_count = 2
 
+" vim-gitgutter
+let g:gitgutter_map_keys = 0
+let g:gitgutter_realtime = 1
+
 "set t_Co=256
 
 filetype plugin indent on
