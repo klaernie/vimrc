@@ -7,11 +7,14 @@ if exists("&tabpagemax")
     set tabpagemax=100
 endif
 
-" powerline-related
+" vim-airline-related
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_theme = 'default'
-let g:Powerline_colorscheme = 'default'
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_min_count = 2
+let g:airline#extensions#tabline#tab_min_count = 2
+
 "set t_Co=256
 
 filetype plugin indent on
@@ -45,12 +48,6 @@ endif
 
 " include man-ftplugin to get :Man
 runtime ftplugin/man.vim
-
-" only if powerline is loaded
-if exists('g:Powerline_loaded')
-	" make powerline show a trailing whitespace marker
-	silent! call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
-endif
 
 command! -nargs=1 -complete=help H :tab help <args> |
 			\let helpfile = expand("%") |
