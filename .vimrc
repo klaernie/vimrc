@@ -19,8 +19,6 @@ let g:airline#extensions#tabline#tab_min_count = 2
 let g:gitgutter_map_keys = 0
 let g:gitgutter_realtime = 1
 
-"set t_Co=256
-
 filetype plugin indent on
 set autoindent
 set smartindent
@@ -30,12 +28,8 @@ nohlsearch
 " make :set list more useful
 set list listchars:tab:▸\ ,eol:¬,trail:▇
 
-"syn match WhiteSpace / / conceal cchar=‧
-"setl conceallevel=2 concealcursor=nv
-
 if has("gui_running")
 	set guifont=Terminus
-	"let g:Powerline_symbols = 'fancy'
 endif
 
 if v:version >= 700
