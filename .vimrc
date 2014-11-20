@@ -28,6 +28,9 @@ nohlsearch
 " make :set list more useful
 set list listchars:tab:▸\ ,eol:¬,trail:▇
 
+" allow me to backspace anything
+set backspace=indent,eol,start
+
 if has("gui_running")
 	set guifont=Terminus
 endif
