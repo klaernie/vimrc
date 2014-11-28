@@ -275,7 +275,7 @@ if &t_Co > 255
     hi IncSearch       ctermfg=238
     hi Keyword         ctermfg=223   cterm=bold
     hi Label           ctermfg=187   cterm=underline
-    hi LineNr          ctermfg=248   
+    hi LineNr          ctermfg=7     ctermbg=235
     hi Macro           ctermfg=223   cterm=bold
     hi ModeMsg         ctermfg=223   cterm=none
     hi MoreMsg         ctermfg=15    cterm=bold
