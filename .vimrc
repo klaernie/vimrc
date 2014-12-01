@@ -26,7 +26,7 @@ set hlsearch
 nohlsearch
 
 " make :set list more useful
-set list listchars:tab:▸\ ,eol:¬,trail:▇
+set list listchars:tab:▸\ ,eol:¬,trail:▇,nbsp:·
 
 " allow me to backspace anything
 set backspace=indent,eol,start
