@@ -25,6 +25,9 @@ set smartindent
 set hlsearch
 nohlsearch
 
+" tagbar
+nmap <F8> :TagbarToggle<CR>
+
 " make :set list more useful
 set list listchars:tab:▸\ ,eol:¬,trail:▇,nbsp:·
 
