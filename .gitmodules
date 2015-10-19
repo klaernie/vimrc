@@ -34,3 +34,7 @@
 [submodule ".vim/bundle/tagbar-phpctags"]
 	path = .vim/bundle/tagbar-phpctags
 	url = https://github.com/vim-php/tagbar-phpctags.vim
+[submodule ".vim/bundle/didyoumean"]
+	path = .vim/bundle/didyoumean
+	url = https://github.com/EinfachToll/DidYouMean.git
+	branch = master
