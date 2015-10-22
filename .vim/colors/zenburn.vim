@@ -262,10 +262,10 @@ if &t_Co > 255
     hi Debug           ctermfg=181   cterm=bold
     hi Define          ctermfg=223   cterm=bold
     hi Delimiter       ctermfg=245
-    hi DiffAdd         ctermfg=66    cterm=bold
+    hi DiffAdd         ctermbg=22
     hi DiffChange      ctermbg=236
-    hi DiffDelete      ctermfg=236   
-    hi DiffText        ctermfg=217   cterm=bold
+    hi DiffDelete      ctermbg=52
+    hi DiffText        ctermbg=239   cterm=bold
     hi Directory       ctermfg=109   cterm=bold
     hi ErrorMsg        ctermfg=115   cterm=bold
     hi Exception       ctermfg=249   cterm=bold
