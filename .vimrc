@@ -43,6 +43,7 @@ endif
 
 if v:version >= 700
 	" source all plugins from .vim/bundle
+	runtime bundle/vim-pathogen/autoload/pathogen.vim
 	silent! call pathogen#infect()
 	silent! call pathogen#helptags()
 endif
