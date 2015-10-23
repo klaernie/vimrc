@@ -62,3 +62,7 @@
 	path = .vim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 	branch = master
+[submodule ".vim/bundle/dbext"]
+	path = .vim/bundle/dbext
+	url = https://github.com/vim-scripts/dbext.vim.git
+	branch = master
