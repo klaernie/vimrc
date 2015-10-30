@@ -66,3 +66,7 @@
 	path = .vim/bundle/dbext
 	url = https://github.com/vim-scripts/dbext.vim.git
 	branch = master
+[submodule ".vim/bundle/vim-repeat"]
+	path = .vim/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
+	branch = master
