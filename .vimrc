@@ -31,6 +31,19 @@ let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 1
+let g:tagbar_type_javascript = {
+    \ 'ctagstype' : 'js',
+    \ 'kinds' : [
+        \ 'r:global variables:0:0',
+        \ 'o:objects:0:0',
+        \ 'a:arrays:0:0',
+        \ 'f:functions',
+        \ 'c:callbacks',
+    \ ],
+    \ 'kind2scope' : {
+        \ 'callback' : 'f',
+    \ },
+\ }
 
 " make :set list more useful
 set list listchars:tab:▸\ ,eol:¬,trail:▇,nbsp:·
