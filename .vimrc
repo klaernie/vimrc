@@ -14,6 +14,7 @@ let g:airline_theme = 'powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#tabline#tab_nr_type = 2
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 " vim-gitgutter
 let g:gitgutter_map_keys = 0
