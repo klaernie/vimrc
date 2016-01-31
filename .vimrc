@@ -1,3 +1,37 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-scriptease'
+Plugin 'godlygeek/tabular'
+Plugin 'gregsexton/MatchTag'
+Plugin 'powerman/vim-plugin-AnsiEsc'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'chrisbra/csv.vim'
+Plugin 'chrisbra/NrrwRgn'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'vim-php/tagbar-phpctags.vim'
+Plugin 'EinfachToll/DidYouMean'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'tpope/vim-pathogen'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 syntax on
 set background=dark
 set modeline
@@ -54,13 +88,6 @@ set backspace=indent,eol,start
 
 if has("gui_running")
 	set guifont=Terminus
-endif
-
-if v:version >= 700
-	" source all plugins from .vim/bundle
-	runtime bundle/vim-pathogen/autoload/pathogen.vim
-	silent! call pathogen#infect()
-	silent! call pathogen#helptags()
 endif
 
 " source my aux vimscripts
