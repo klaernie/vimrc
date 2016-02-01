@@ -3,8 +3,16 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
+let s:bootstrap = 0
+try
+	call vundle#begin()
+catch /E117:/
+	let s:bootstrap = 1
+	silent !mkdir -p ~/.vim/bundle
+	silent !unset GIT_DIR && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	redraw!
+	call vundle#begin()
+endtry
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -30,6 +38,10 @@ Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+if s:bootstrap
+        silent PluginInstall
+        quit
+end
 filetype plugin indent on    " required
 
 syntax on
