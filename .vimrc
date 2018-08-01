@@ -35,6 +35,7 @@ Plugin 'tpope/vim-pathogen'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+Plugin 'jnurmine/Zenburn'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -116,7 +117,26 @@ command! -nargs=1 -complete=help H :tab help <args> |
 			\execute "tab view ".helpfile
 
 if v:version >= 700
+	let g:zenburn_transparent = 1
+	let g:zenburn_old_Visual = 1
+	let g:zenburn_alternate_Visual = 0
 	colorscheme zenburn
+
+	" Patch things that annoyed me in the past
+	hi DiffAdd         ctermbg=22
+	hi DiffDelete      ctermbg=52
+	hi DiffText        ctermbg=239   cterm=bold
+
+	hi SignColumn      ctermfg=8     ctermbg=235
+
+	hi LineNr          ctermfg=7     ctermbg=235
+
+	hi Conceal         ctermfg=15    ctermbg=none
+
+	hi Visual    ctermfg=0   ctermbg=208
+	hi VisualNOS ctermbg=208
+
+	hi Search          ctermfg=230   ctermbg=196
 else
 	colorscheme desert
 endif
