@@ -178,3 +178,4 @@ augroup JumpCursorOnEdit
  \ endif
 augroup END
 
+xnoremap <F8> y:read system('jq', @")[:-2]<cr>
