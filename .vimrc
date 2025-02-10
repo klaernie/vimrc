@@ -36,6 +36,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'jnurmine/Zenburn'
+Plugin 'isobit/vim-caddyfile'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
