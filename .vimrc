@@ -70,6 +70,8 @@ let g:gitgutter_realtime = 1
 filetype plugin indent on
 set autoindent
 set smartindent
+" remove # from the keys triggering a beginning at line start
+set cindent cinkeys-=0#
 set hlsearch
 nohlsearch
 
